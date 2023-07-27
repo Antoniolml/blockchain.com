@@ -25,3 +25,56 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply h-full selection:bg-black selection:text-white;
+  }
+  .h0 {
+    @apply text-4xl font-bold tracking-wide md:text-6xl;
+  }
+  h1,
+  .h1 {
+    @apply text-3xl font-bold md:text-4xl;
+  }
+  h2,
+  .h2 {
+    @apply mt-6 scroll-mt-20 text-2xl font-bold md:text-4xl;
+  }
+  h3,
+  .h3 {
+    @apply mt-6 scroll-mt-20 text-xl font-bold md:text-2xl;
+  }
+  h4,
+  .h4 {
+    @apply mt-6 scroll-mt-20 text-lg font-bold md:text-xl;
+  }
+}
+
+@layer utilities {
+  .animated-underline {
+    background-image: linear-gradient(#ffffff00, #fffefe00),
+      linear-gradient(to right, #ffffff, #ffffff);
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .animated-underline {
+      transition: 0.3s ease;
+      transition-property: background-size, color, background-color,
+        border-color;
+    }
+  }
+  .animated-underline:hover,
+  .animated-underline:focus-visible {
+    background-size: 0 2px, 100% 2px;
+  }
+  .blog-scale {
+    transition: transform 0.75s;
+  }
+  .blog-scale:hover {
+    transform: scale(1.1);
+  }
+}
