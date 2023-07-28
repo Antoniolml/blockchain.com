@@ -3,12 +3,12 @@ import { NavItems } from "@/types";
 export const navigation: NavItems = {
   mainNav: [
     {
-      title: "Home",
-      href: "/",
+      title: "Blog",
+      href: "/blog",
     },
     {
-      title: "Home",
-      href: "/",
+      title: "About",
+      href: "/about",
     },
   ],
   footerNav: [

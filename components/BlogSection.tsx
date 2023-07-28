@@ -12,8 +12,8 @@ interface BlogSection {
 const BlogSection = ({ posts }: { posts: Post[] }) => {
   console.log(posts);
   return (
-    <Container as="section">
-      <div className="flex flex-row items-start justify-start space-x-6 pb-8">
+    <Container as="section" className="animate-in fade-in duration-500 px-0">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center items-start  pb-8">
         {posts?.length ? (
           <>
             {posts.map((p) => (
@@ -40,7 +40,7 @@ const BlogSection = ({ posts }: { posts: Post[] }) => {
                     />
                   </div>
 
-                  <div className="flex h-80 flex-col items-start justify-between p-4">
+                  <div className="flex h-52 flex-col items-start justify-between p-4">
                     <div className="flex flex-col">
                       <span className="text-sm italic">
                         {formatDate(p.date)}

@@ -11,7 +11,7 @@ const Header = () => {
     <Container
       as="header"
       fullSize
-      className="border-b border-white animate-in slide-in-from-top duration-500 lg:border-none"
+      className="border-b border-white animate-in slide-in-from-top duration-500 lg:border-none fixed top-0 z-10 w-full bg-black "
     >
       <Container as="nav" aria-label="Top">
         <div className="flex w-full items-center justify-between py-6">
@@ -19,7 +19,7 @@ const Header = () => {
             <Logo />
           </div>
           <div className="hidden font-medium capitalize lg:inline-flex">
-            <p>Creating digital strategies & Web experiences</p>
+            <p>Educando sobre la blockchain & cryptomonedas.</p>
           </div>
           <div className="ml-10 space-x-8">
             {nav.map((item, index) => (
