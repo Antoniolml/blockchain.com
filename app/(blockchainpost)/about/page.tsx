@@ -22,8 +22,15 @@ const faqs = [
   },
   {
     question:
-      "¿De que te diferencias de otros blogs relacionados con la blockchain?",
-    answer: "",
+      "¿Cómo te diferencias de otros blogs relacionados con la blockchain?",
+    answer:
+      "Muy buena pregunta, existe muchos blogs académicos que escriben acerca de la blockchain y las cryptomonedas, y lo hacen de una excelente manera, por ejemplo tenemos el caso de Binance Academy que sin ninguna duda es muy bueno, incluso yo me he formado con ellos. Sin embargo, la diferencia radica en que estos blogs son muy técnicos, y las personas que no estan formados o relacionados en este espacio académico al presenciar estos conceptos se espatan. Por lo cual, mi objetivo es poder explicar de una manera sencilla y amigable para que las personas puedan entender de que se trata la blockchain y como pueden aprovecharla.",
+  },
+  {
+    question:
+      "¿De que temas relacionados a la blockchain escribirás en este blog?",
+    answer:
+      "Es una pregunta un poco compleja para responder, inicialmente tengo pensando escribir acerca de la blockchain, como fue creado, como podría ayudar a la sociedad, etc. Y dependiendo de como avance el proyecto, escribiré de otros temas, como la seguridad en el mundo de la blockchain, crytomonedas, etc. Pero no me quiero adelantar, como dice el dicho, el que mucho abarca poco aprieta.",
   },
 ];
 
@@ -46,22 +53,31 @@ const AboutPage = () => {
         <AboutFaq faqs={faqs} />
         <hr className="my-10 w-10 border border-white" />
         <p className="text-slate-400 text-justify">
-          Actualmente estoy trabajando en mi título profesional, desarrollando
-          webs, y escribiendo blogs sobre la blockchain y el mundo crypto! Si
-          deseas colaborar colaborar con el proyecto del blog, o por cualquier
-          otra razón, me encantaría saber de ti!
+          Actualmente estoy trabajando como Ing. Industrial, desarrollando webs,
+          y escribiendo blogs sobre la blockchain y el mundo crypto! Si deseas
+          colaborar con el proyecto del blog, o por cualquier otra razón, me
+          encantaría saber de ti!
         </p>
         <div className="flex flex-row space-x-4">
           <span>↳</span>
-          <Alinks href="/" className="text-slate-100">
+          <Alinks
+            href="https://twitter.com/sathonynakamoto"
+            className="text-slate-100"
+          >
             Twitter
           </Alinks>
           <span>/</span>
-          <Alinks href="/" className="text-slate-100">
+          <Alinks
+            href="/https://www.linkedin.com/feed/"
+            className="text-slate-100"
+          >
             Email
           </Alinks>
           <span>/</span>
-          <Alinks href="/" className="text-slate-100">
+          <Alinks
+            href="/https://github.com/Antoniolml"
+            className="text-slate-100"
+          >
             Github
           </Alinks>
           <span>/</span>

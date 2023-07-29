@@ -14,19 +14,19 @@ export const navigation: NavItems = {
   footerNav: [
     {
       title: "Twitter",
-      href: "",
+      href: "https://twitter.com/sathonynakamoto",
     },
     {
       title: "LinkedIn",
-      href: "",
+      href: "https://www.linkedin.com/feed/",
     },
     {
       title: "GitHub",
-      href: "",
+      href: "https://github.com/Antoniolml",
     },
     {
       title: "Email",
-      href: "",
+      href: "mailto:",
     },
   ],
 };
