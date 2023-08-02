@@ -22,7 +22,7 @@ const BlogSection = ({ posts }: { posts: Post[] }) => {
                 className="group w-[330px] flex-none rounded-md border border-gray-300"
               >
                 <Alinks
-                  href={`/insights/${p.slugAsParams}`}
+                  href={`/blog/${p.slugAsParams}`}
                   className="group flex flex-col"
                 >
                   <div className="h-[200px] w-full overflow-clip rounded-t-md">
