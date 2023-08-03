@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import Alinks from "@/components/Alinks";
 import MDXComponents from "@/components/MDXComponents";
 import "./mdx.css";
+import TableOfContents from "@/components/TableOfContents";
 
 interface SingleBlogPost {
   params: {
@@ -60,6 +61,7 @@ const SingleBlogPost = ({ params }: SingleBlogPost) => {
         readingTime={post.readingTime.text}
       />
       <Container className="flex flex-col items-center justify-start lg:flex-row lg:items-start lg:justify-between">
+        <TableOfContents source={post.body.raw} />
         <article className="max-w-full px-4 pb-8 text-white lg:max-w-3xl">
           <MDXComponents code={post.body.code} />
           <p className="mt-4 text-xl text-white">

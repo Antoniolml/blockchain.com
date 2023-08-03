@@ -550,13 +550,19 @@
       }
     },
     {
-      "scope": ["meta.structure.dictionary.json", "punctuation.definition.string"],
+      "scope": [
+        "meta.structure.dictionary.json",
+        "punctuation.definition.string"
+      ],
       "settings": {
         "foreground": "#5BD1B9"
       }
     },
     {
-      "scope": ["meta.structure.dictionary.json", "support.type.property-name.json"],
+      "scope": [
+        "meta.structure.dictionary.json",
+        "support.type.property-name.json"
+      ],
       "settings": {
         "foreground": "#DD4F7D"
       }
@@ -665,7 +671,10 @@
     },
     {
       "name": "PHP: Begin block",
-      "scope": ["punctuation.section.embedded.begin.php", "keyword.other.class.php"],
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "keyword.other.class.php"
+      ],
       "settings": {
         "foreground": "#DD4F7D"
       }

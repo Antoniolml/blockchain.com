@@ -81,7 +81,7 @@ I still have a custom `Pre` component that allows readers to copy a code block t
 
 <CodeTitle title="components/emoji.tsx" lang="tsx" />
 
-```tsx {9-16}
+```tsx
 // You can copy this code block
 interface EmojiProps {
   label?: string;
@@ -101,3 +101,7 @@ export default function Emoji({ label, emoji, ...props }: EmojiProps) {
   );
 }
 ```
+
+## Tailwind Merge
+
+To be able to create usable components without style conflicts, I am using [`clsx`](https://github.com/lukeed/clsx) and [`tailwind-merge`](https://github.com/dcastil/tailwind-merge). You can do the same with your Tailwind CSS projects by creating a function as follows:
